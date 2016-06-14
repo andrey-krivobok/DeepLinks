@@ -5,6 +5,20 @@
 		<meta charset="utf-8">
 		<title>It`s work!</title>
 	</head>
+	<script>
+		//document.cookie = "userName=Petya";
+    		//alert( document.cookie );
+    	
+    		function try_open()
+    		{
+			window.location.href='myapp://andrey-krivobok.github.io/DeepLinks/test'
+			setTimeout(function() {
+			   // Link to the App Store should go here -- only fires if deep link fails                
+			   window.location = "https://itunes.apple.com/us/app/myapp/id123456789?ls=1&mt=8";
+			}, 500);
+		}
+    	
+  	</script>
 
 	<body>
 		<p>It`s work!</p>
@@ -13,13 +27,6 @@
 		<p/>
 		<a href="myapp://andrey-krivobok.github.io/DeepLinks/test">test link 2</a>
 		<p/>
-		<button onClick="javascript:window.location.href='https://andrey-krivobok.github.io/DeepLinks/test'">Button</button>
-
-		<!--<script>
-			document.cookie = "userName=Petya";
-	    	alert( document.cookie );
-	    	
-	  	</script>-->
-
+		<button onClick="try_open()">Button</button>
   	</body>
 </html>
